@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lopez-amoblamientos.pages.dev/sitemap.xml

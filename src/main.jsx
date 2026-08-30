@@ -49,7 +49,7 @@ function Layout({ children }) {
   return <>
     <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`}>
       <Link className="brand" to="/" aria-label="Lopez Amoblamientos, inicio">
-        <img className="brand-logo" src="/lopez-amoblamientos-logo.png" alt="" />
+        <img className="brand-logo" src={`${import.meta.env.BASE_URL}lopez-amoblamientos-logo.png`} alt="" />
         <span>Lopez <em>Amoblamientos</em></span>
       </Link>
       <nav id="main-navigation" className={`main-nav ${menuOpen ? 'is-open' : ''}`} aria-label="Navegación principal">
@@ -64,7 +64,7 @@ function Layout({ children }) {
     <main key={location.pathname} className="page-shell">{children}</main>
     <a className="quick-whatsapp" href={studio.whatsapp} target="_blank" rel="noreferrer" aria-label="Escribinos por WhatsApp"><span className="quick-whatsapp-dot" /><span>Escribinos<br /><b>por WhatsApp</b></span><strong aria-hidden="true">↗</strong></a>
     <footer className="site-footer">
-      <div><Link className="brand footer-brand" to="/"><img className="brand-logo" src="/lopez-amoblamientos-logo.png" alt="" /><span>Lopez <em>Amoblamientos</em></span></Link><p>Diseñamos lo que otros<br />solo imaginan.</p></div>
+      <div><Link className="brand footer-brand" to="/"><img className="brand-logo" src={`${import.meta.env.BASE_URL}lopez-amoblamientos-logo.png`} alt="" /><span>Lopez <em>Amoblamientos</em></span></Link><p>Diseñamos lo que otros<br />solo imaginan.</p></div>
       <div className="footer-links"><span>{studio.city}, Argentina</span><a href={`mailto:${studio.email}`}>{studio.email}</a><a href={studio.instagram} target="_blank" rel="noreferrer">Instagram ↗</a></div>
       <div className="footer-bottom"><span>© {new Date().getFullYear()} Corteza Studio</span><span>Carpintería a medida</span></div>
     </footer>

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://lopez-amoblamientos.pages.dev/sitemap.xml
+Sitemap: https://guochenn.github.io/lopez-amoblamientos/sitemap.xml
